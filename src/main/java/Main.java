@@ -10,6 +10,7 @@ public class Main {
         UserService userService = new UserService();
         User user = userService.findUser(2);
         System.out.println(user);
+        System.out.println(user.getAutos());
 
 //        User user = new User("Петя",42);
 //        userService.saveUser(user);
