@@ -27,7 +27,7 @@ public class Application implements Runnable {
         System.out.println("Enter user name:");
         var name = sc.nextLine();
         System.out.println("Enter user age:");
-        var age = sc.nextInt();
+        var age = Integer.parseInt(sc.nextLine());
         service.saveUser(new User(name, age));
     }
 
